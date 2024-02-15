@@ -1,0 +1,109 @@
+body{
+    background-color: rgba(0, 128, 0, 0.4);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+img{
+    max-width: 100%;
+}
+
+.big-container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.container{
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;    
+    border-radius: 5px;
+}
+
+/* circle con clip */
+.clip-1{
+    clip-path: circle(40%);
+}
+
+/* cerchio con mask */
+.mask-1{
+    mask-image: url(../img/circle_icon.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.mask-1b{
+    mask-image: url(../img/blob.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+/* linear gradient */
+.mask-2{
+    mask-image: linear-gradient(to bottom, transparent 20%, black 80%);
+}
+
+.mask-2b{
+    mask-image: linear-gradient(to top right, transparent, black);
+}
+
+/* radial gradient */
+.mask-3{
+    mask-image: radial-gradient(circle, rgba(255, 0, 0) 50%, rgba(0, 0, 0, .4) 80%);
+}
+
+.mask-3b{
+    mask-image: radial-gradient(circle, rgba(255, 0, 0) 40%, rgba(0, 0, 0, .4) 40%);
+}
+
+/* mask size */
+.mask-4{
+    mask-image: url(../img/star.svg);
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%;
+}
+
+/* mask origin */
+.mask-5{
+    mask-image: url(../img/star.svg);
+    mask-repeat: no-repeat;
+    mask-size: 20em;
+    border: 80px solid green;
+    mask-origin: content-box; /* togli il content-box per vedere la diferenza*/
+}
+
+.mask-5b{
+    background-color: blue;
+    mask-image: url(../img/star.svg);
+    mask-repeat: no-repeat;
+    mask-size: 20em;
+    padding: 80px;
+    border: 80px solid green;
+    mask-origin: padding-box;
+}
+
+/* mask position */
+.mask-6{
+    mask-image: url(../img/blob.svg);
+    mask-repeat: no-repeat;
+    mask-position: bottom right;
+}
+
+/* mask repeat */
+
+.mask-7{
+    mask-image: url(../img/blob.svg);
+    mask-size: 35%;
+    mask-repeat: space;
+}
+
+.mask-7b{
+    mask-image: url(../img/blob.svg);
+    mask-size: 51%;
+    mask-repeat: round;
+}
